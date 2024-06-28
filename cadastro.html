@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!-- Link para a biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Link para a biblioteca de ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="menu-toggle" id="menuToggle">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <img src="assets/img/logo.png" alt="Logo" class="logo">
+            <div class="menu-icons">
+                <a id="searchIcon"><ion-icon name="search"></ion-icon></a>
+                <a href="cadastrologin.html"><ion-icon name="person"></ion-icon></a>
+            </div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <ul>
+                    <div class="header-drop">
+                        <img src="assets/img/exemplo-perfil.webp" alt="" class="img-perfil">
+                    </div>
+                    <span id="span-nome">Nome sobrenome</span>
+                    <li class="menu-list"><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li class="menu-list"><a href="questionario.html"><ion-icon name="newspaper-sharp"></ion-icon>Questionario</a></li>
+                    <li class="menu-list"><a href="assinaturas.html"><ion-icon name="star-sharp"></ion-icon>Minhas assinaturas</a></li>
+                    <li class="menu-list"><a href="diario.html"><ion-icon name="happy-sharp"></ion-icon>Meu humor</a></li>
+                    <li class="menu-list"><a href="indicacoes.html"><ion-icon name="flame"></ion-icon>Indicações</a></li>
+                    <li class="menu-list"><a href="configuracoes.html"><ion-icon name="cog"></ion-icon>Configurações</a></li>
+                    <li class="menu-list"><a href="termos.html"><ion-icon name="lock-closed"></ion-icon>Termos de privacidade</a></li>
+                    <li class="menu-list"><a href="#"><ion-icon name="exit-outline"></ion-icon>Sair</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="search-container" id="searchContainer">
+            <div class="search-input" id="searchInput">
+                <input type="text" id="searchField" placeholder="Buscar...">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="main-container">
+            <div class="form-container">
+                <form id="cadastro-form">
+                    <h2>Cadastro</h2>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nome e Sobrenome" id="nome">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="E-mail" id="email">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Telefone" id="telefone">
+                    </div>
+                    <div class="input-pair">
+                        <input type="text" placeholder="Endereço" id="endereco">
+                        <input type="text" placeholder="Nº" id="numero">
+                    </div>
+                    <div class="input-pair">
+                        <input type="text" placeholder="CEP" id="cep">
+                        <input type="text" placeholder="Bairro" id="bairro">
+                    </div>
+                    <div class="input-pair">
+                        <input type="text" placeholder="Cidade" id="cidade">
+                        <input type="text" placeholder="UF" id="uf">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Complemento" id="complemento">
+                    </div>
+                    <div class="input-group senha-grupo">
+                        <input type="password" placeholder="Senha" id="senha">
+                    </div>
+                    <div class="input-group senha-grupo">
+                        <input type="password" placeholder="Confirmação de Senha" id="confirmacao-senha">
+                    </div>
+                    <button type="submit" id="criar-conta">Criar Conta</button>
+                </form>
+            </div>
+        </div>
+        <div id="successMessage" class="hidden">
+            Conta criada com sucesso!
+        </div>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

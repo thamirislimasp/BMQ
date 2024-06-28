@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para a biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Link para a biblioteca de ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Login</title>
+</head>
+<header>
+    <nav class="navbar">
+        <button class="menu-toggle" id="menuToggle">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <img src="assets/img/logo.png" alt="Logo" class="logo">
+        <div class="menu-icons">
+            <a id="searchIcon"><ion-icon name="search"></ion-icon></a>
+            <a href="cadastrologin.html"><ion-icon name="person"></ion-icon></a>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <div class="header-drop">
+                    <img src="assets/img/exemplo-perfil.webp" alt="" class="img-perfil">
+                </div>
+                <span id="span-nome">Nome sobrenome</span>
+                <li class="menu-list"><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="menu-list"><a href="questionario.html"><ion-icon name="newspaper-sharp"></ion-icon>Questionario</a></li>
+                <li class="menu-list"><a href="assinaturas.html"><ion-icon name="star-sharp"></ion-icon>Minhas assinaturas</a></li>
+                <li class="menu-list"><a href="diario.html"><ion-icon name="happy-sharp"></ion-icon>Meu humor</a></li>
+                <li class="menu-list"><a href="indicacoes.html"><ion-icon name="flame"></ion-icon>Indicações</a></li>
+                <li class="menu-list"><a href="configuracoes.html"><ion-icon name="cog"></ion-icon>Configurações</a></li>
+                <li class="menu-list"><a href="termos.html"><ion-icon name="lock-closed"></ion-icon>Termos de privacidade</a></li>
+                <li class="menu-list"><a href="#"><ion-icon name="exit-outline"></ion-icon>Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-container" id="searchContainer">
+        <div class="search-input" id="searchInput">
+            <input type="text" id="searchField" placeholder="Buscar...">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        </div>
+    </div>
+</header>
+<main>
+    <figure class="login-img">
+        <img src="imgs/logo.png" alt="logo">
+    </figure>
+    <h4 class="bem-vindo">SEJA BEM-VINDO!</h4>
+    <div class="login-container">
+        <form class="login-form">
+            <div class="input-group-login">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="email" id="email" class="input-field" placeholder="Digite seu Email" required>
+            </div>
+            <div class="input-group-login">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="password" class="input-field" placeholder="Sua senha" required>
+            </div>
+            <button type="submit" class="login-button">ENTRAR</button>
+            <div class="links">
+                <a href="#" class="forgot-password">ESQUECEU SUA SENHA?</a>
+                <p class="texto-register">AINDA NÃO POSSUI CONTA?</p>
+                <a href="cadastro.html" class="register">CADASTRE-SE</a>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script src="assets/script.js"></script>
+</body>
+
+</html>

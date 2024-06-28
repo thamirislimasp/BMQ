@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario de humor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/diario.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/home.css">
+    
+    <!-- Link para a biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+    <!-- Link para a biblioteca de ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- biblioteca gráfico -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <button class="menu-toggle" id="menuToggle">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+            <img src="assets/img/logo.png" alt="Logo" class="logo">
+            <div class="menu-icons">
+                <a id="searchIcon"><ion-icon name="search"></ion-icon></a>
+                <a href="cadastrologin.html"><ion-icon name="person"></ion-icon></a>
+            </div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <ul>
+                    <div class="header-drop">
+                      <img src="assets/img/exemplo-perfil.webp" alt="" class="img-perfil">
+                    </div>
+                    <span id="span-nome">Nome sobrenome</span>
+                    <li class="menu-list"><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li class="menu-list"><a href="questionario.html"><ion-icon name="newspaper-sharp"></ion-icon>Questionario</a></li>
+                    <li class="menu-list"><a href="assinaturas.html"><ion-icon name="star-sharp"></ion-icon>Minhas assinaturas</a></li>
+                    <li class="menu-list"><a href="diario.html"><ion-icon name="happy-sharp"></ion-icon>Meu humor</a></li>
+                    <li class="menu-list"><a href="indicacoes.html"><ion-icon name="flame"></ion-icon>Indicações</a></li>
+                    <li class="menu-list"><a href="configuracoes.html"><ion-icon name="cog"></ion-icon>Configurações</a></li>
+                    <li class="menu-list"><a href="termos.html"><ion-icon name="lock-closed"></ion-icon>Termos de privacidade</a></li>
+                    <li class="menu-list"><a href="#"><ion-icon name="exit-outline"></ion-icon>Sair</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="search-container" id="searchContainer">
+            <div class="search-input" id="searchInput">
+                <input type="text" id="searchField" placeholder="Buscar...">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+<main>
+
+    <!-- TÍTULOS DA PÁGINA -->
+    <div class = "topo">
+        <h4>DIÁRIO DE EMOÇÕES</h4>
+        <br>
+        <div>
+            <h4>PARABÉNS!</h4>
+            <p>A maioria das suas emoções estão positivas</p>
+        </div>    
+    </div>
+
+    <!-- GRÁFICO DE EMOÇÕES -->
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- EMOJIS DE EMOÇÕES -->
+    <div class="emocoes">
+        <span class="cor1">&#128521;</span>
+        <span class="cor2">&#128578;</span>
+        <span class="cor3">&#128528;</span>
+        <span class="cor4">&#128543;</span>
+        <span class="cor5">&#128544;</span>
+    </div>
+
+    <!-- CALENDÁRIO -->
+    <div class="container-calendario">
+        <div class="mes">
+            <h5>MAIO - 2024</h5>
+        </div>
+        <ul class="dias-semana">
+            <li>DOM</li>
+            <li>SEG</li>
+            <li>TER</li>
+            <li>QUA</li>
+            <li>QUI</li>
+            <li>SEX</li>
+            <li>SAB</li>
+          </ul>
+          
+          <ul class="dias">  
+            <li class="cor1">&#128521;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor5">&#128544;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor3"><span class="active">&#128528;</span></li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor5">&#128544;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor1">&#128521;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor3">&#128528;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor3">&#128528;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor3">&#128528;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor2">&#128578;</li>
+            <li class="cor4">&#128543;</li>
+            <li class="cor4">&#128543;</li>
+            <li class="cor2">&#128578;</li>
+          </ul>
+    </div> 
+</main>
+<footer>
+    
+</footer>
+
+
+<script src="assets/script.js" type="module"></script>
+  
+<!-- JAVASCRIPT GRÁFICO EMOÇÕES -->
+<script>
+    const xValues = ["1", "2", "3", "4", "5"];
+    const yValues = [55, 49, 44, 24, 15];
+    const barColors = [
+    "#FFEC3F",
+    "#FFCC4D",
+    "#80BDDB",
+    "#4D7AFF",
+    "#DA2F47"
+    ];
+
+    new Chart("myChart", {
+        type: "doughnut",
+        data: {
+            datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+            }]
+        },
+        options: {
+            title: {
+            display: true,
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

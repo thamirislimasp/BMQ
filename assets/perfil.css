@@ -1,0 +1,113 @@
+.material-symbols-outlined {
+    font-size: 35px !important;
+    transform: rotate(-180deg);
+}
+.header-drop {
+    margin-top: 17px;
+    margin-left: -1%;
+}
+
+.logo{
+    margin-left: 30px;
+}
+main p{
+    text-align: center;
+}
+#p1{
+    font-size: 13px;
+    color: green;
+    margin-right: 7px;
+}
+h3{
+    text-align: center;
+    color:darkgreen;
+    margin-top: 18px;
+}
+::placeholder{
+    text-align: center;
+}
+#nome, #email, #tel, #complemento{
+    width: 270px;
+    height: 42px;
+    border: 1px solid #e5e6d9;
+    border-radius: 17px;
+    text-align: center;
+    background-color: #e5e6d9;
+
+}
+.inputs-padrões{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.input-endereço-numero{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+#endereço{
+    width: 168px;
+    height: 42px;
+    border: 1px solid #e5e6d9;
+    border-radius: 17px;
+    text-align: center;
+    background-color: #e5e6d9;
+    
+}
+#numero-cep{
+    width: 100px;
+    height: 42px;
+    border: 1px solid #e5e6d9;
+    border-radius: 17px;
+    margin-left: 5px;
+    text-align: center;
+    background-color: #e5e6d9;
+}
+.input-cep-bairro, .input-cidade-uf{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#cep, #cidade{
+    width: 126px;
+    height: 42px;
+    border: 1px solid #e5e6d9;
+    border-radius: 17px;
+    text-align: center;
+    background-color: #e5e6d9;
+}
+#bairro, #uf{
+    width: 139px;
+    height: 42px;
+    border: 1px solid #e5e6d9; 
+    border-radius: 17px;
+    margin-left: 5px;
+    text-align: center;
+    background-color: #e5e6d9;
+}
+#senha-perfil, #confirma-senha{
+    background-color: #e5e6d9;
+    width: 270px;
+    height: 42px;
+    border: 1px solid #e5e6d9;
+    border-radius: 17px;
+    text-align: center;
+    
+}
+
+#btn-submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+#btn-submit button{
+    width: 152px;
+    height: 37px;
+    border: 1px solid;
+    border-radius: 17px;
+    background-color: darkolivegreen;
+    color: white;
+
+}

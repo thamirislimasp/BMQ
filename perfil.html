@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/perfil.css">
+    <title>Meu perfil</title>
+    <!-- Link para a biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Link para a biblioteca de ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <span class="material-symbols-outlined">
+                logout
+            </span>
+            <img src="assets/img/logo.png" alt="Logo" class="logo">
+            <div class="menu-icons">
+                <a id="searchIcon"><ion-icon name="search"></ion-icon></a>
+                <a href="cadastrologin.html"><ion-icon name="person"></ion-icon></a>
+            </div>
+
+        </nav>
+        <div class="search-container" id="searchContainer">
+            <div class="search-input" id="searchInput">
+                <input type="text" id="searchField" placeholder="Buscar...">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="header-drop">
+            <img src="assets/img/exemplo-perfil.webp" alt="" class="img-perfil">
+        </div>
+        <a href="">
+            <p id="p1">EDITAR FOTO</p>
+        </a>
+        <h3>FULANA DA SILVA</h3>
+        <div class="inputs-padrões">
+            <input type="text" name="nome" class="input0" id="nome" placeholder="FULANA DA SILVA PINHEIROS" value="">
+        </div>
+        <div class="inputs-padrões">
+            <input type="email" name="email" class="input0" id="email" placeholder="EMAIL CADASTRADO" value="">
+        </div>
+        <div class="inputs-padrões">
+            <input type="tel" name="telefone" class="input0" id="tel" placeholder="TELEFONE CADASTRADO" value="" >
+        </div>
+        <div class="input-endereço-numero">
+            <input type="text" name="endereço"class="input0" id="endereço" placeholder="ENDEREÇO" value="">
+            <input type="number" class="input0" id="numero-cep" name="numero" placeholder="N*" value="">
+        </div>
+        <div class="input-cep-bairro">
+            <input type="number" name="cep" class="input0" id="cep" placeholder="CEP" value="" >
+            <input type="text" class="input0" id="bairro" name="bairro" placeholder="BAIRRO" value="">
+        </div>
+        <div class="input-cidade-uf">
+            <input type="text" name="cidade" class="input" id="cidade" placeholder="CIDADE" value="">
+            <input type="text" class="input0" id="uf" name="uf" placeholder="UF" >
+        </div>
+        <div class="inputs-padrões">
+            <input type="text" name="complemento" class="input0" id="complemento" placeholder="COMPLEMENTO" value="">
+        </div>
+        <div class="inputs-padrões">
+            <input type="password" name="senha-perfil" id="senha-perfil" placeholder="SENHA" required value="">
+        </div> 
+
+        <div id="btn-submit">     
+        <button type="submit" onclick="button_submit()">CONFIRMAR</button>
+        </div>
+    </main>
+    <!--Espaço para footer-->
+     
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
