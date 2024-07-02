@@ -17,10 +17,18 @@
 
 .container-termos h4 {
     text-align: center;
+    margin: 8px;
 }
 
 /*  */
 /* CHECKBOX */
+
+.checkboxx {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+}
 
 .checkbox-wrapper-19 {
     box-sizing: border-box;
@@ -177,4 +185,21 @@
     -o-animation: dothatopcheck-19 0.4s ease 0s forwards;
     -webkit-animation: dothatopcheck-19 0.4s ease 0s forwards;
     animation: dothatopcheck-19 0.4s ease 0s forwards;
+  }
+
+  /*  */
+  /* BOTÃO CONFIRMAR */
+
+  #botao-conf {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .btn-confirmar {
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #4C6410;
+    color: white;
+    font-size: 12px;
   }
